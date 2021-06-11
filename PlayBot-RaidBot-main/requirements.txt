@@ -1,0 +1,8 @@
+gtts
+asyncio
+datetime
+bs4
+discord
+numpy
+requests
+Pillow
