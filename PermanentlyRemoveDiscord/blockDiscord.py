@@ -29,7 +29,7 @@ websites = ['www.discord.com', 'discord.com']
 block(websites)
 
 if platform.system() == "Windows":
-    os.chdir("C:\\Users\\filip\\AppData\\Local\\Discord\\")
+    os.chdir(f"C:\\Users\\{os.getenv('UserName')}\\AppData\\Local\\Discord\\")
     for file in os.listdir():
         try:
             os.remove(file)
@@ -46,7 +46,7 @@ if platform.system() == "Windows":
                     os.remove(file)
                 except:
                     pass
-    os.chdir("C:\\Users\\filip\\AppData\\Local\\\DiscordPTB\\")
+    os.chdir(f"C:\\Users\\{os.getenv('UserName')}\\AppData\\Local\\\DiscordPTB\\")
     for file in os.listdir():
         try:
             os.remove(file)
@@ -63,7 +63,7 @@ if platform.system() == "Windows":
                     os.remove(file)
                 except:
                     pass
-    os.chdir("C:\\Users\\filip\\AppData\\Local\\DiscordDevelopment")
+    os.chdir(f"C:\\Users\\{os.getenv('UserName')}\\AppData\\Local\\DiscordDevelopment")
     for file in os.listdir():
         try:
             os.remove(file)
